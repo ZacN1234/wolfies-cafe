@@ -41,6 +41,122 @@
     }
 
     .page-1 {
+      page-break-after: always;
+    }
+
+    /* ===== PAGE 2 ===== */
+
+    .p2-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 10px 0 6px 0;
+    }
+
+    .p2-subtitle {
+      font-size: 14px;
+      color: #6b6b6b;
+      margin-bottom: 30px;
+    }
+
+    .comparison {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .comparison-col {
+      flex: 1;
+      text-align: left;
+    }
+
+    .accent-label {
+      display: inline-block;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .accent-label.before {
+      background: #fdecea;
+      color: #c0392b;
+    }
+
+    .accent-label.after {
+      background: #e8f8ef;
+      color: #27ae60;
+    }
+
+    .col-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1.5px solid #e8dcc8;
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .check-list li {
+      font-size: 12.5px;
+      line-height: 2;
+      color: #3d3d3d;
+      padding-left: 2px;
+    }
+
+    .check-list li .mark {
+      font-weight: 700;
+      margin-right: 6px;
+      font-size: 13px;
+    }
+
+    .mark-red { color: #c0392b; }
+    .mark-green { color: #27ae60; }
+
+    .summary-box {
+      background: #f7f2e8;
+      border: 1.5px solid #e8dcc8;
+      border-radius: 10px;
+      padding: 20px 28px;
+      margin: 36px auto 0 auto;
+      max-width: 88%;
+      text-align: center;
+    }
+
+    .summary-box p {
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: #3d3d3d;
+      font-style: italic;
+    }
+
+    .final-cta {
+      margin-top: 28px;
+      text-align: center;
+    }
+
+    .final-cta .cta-line {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+
+    .final-cta .cta-contact {
+      font-size: 13px;
+      color: #7a7a7a;
     }
 
     .pill {
@@ -296,6 +412,58 @@
 
 </div>
 
+<!-- ===================== PAGE 2 — WEBSITE COMPARISON ===================== -->
+<div class="page page-2 center">
+
+  <span class="pill">Before &amp; After</span>
+
+  <h2 class="p2-headline">Your Website, Reimagined</h2>
+  <p class="p2-subtitle">Here's what changed &mdash; and why it matters.</p>
+
+  <div class="comparison">
+
+    <!-- LEFT COLUMN — Current Site -->
+    <div class="comparison-col">
+      <span class="accent-label before">Before</span>
+      <p class="col-title">Current Site</p>
+      <ul class="check-list">
+        <li><span class="mark mark-red">&#10007;</span> Generic Shopify template</li>
+        <li><span class="mark mark-red">&#10007;</span> No SEO or Google visibility</li>
+        <li><span class="mark mark-red">&#10007;</span> Missing menu, hours &amp; location</li>
+        <li><span class="mark mark-red">&#10007;</span> Not mobile-optimised</li>
+        <li><span class="mark mark-red">&#10007;</span> No Google Maps or contact info</li>
+        <li><span class="mark mark-red">&#10007;</span> Doesn't tell Wolf's story</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT COLUMN — New Site -->
+    <div class="comparison-col">
+      <span class="accent-label after">After</span>
+      <p class="col-title">New Site</p>
+      <ul class="check-list">
+        <li><span class="mark mark-green">&#10003;</span> Custom-designed, modern &amp; sleek</li>
+        <li><span class="mark mark-green">&#10003;</span> Built for Google search (SEO + AEO)</li>
+        <li><span class="mark mark-green">&#10003;</span> Full menu with sensory descriptions</li>
+        <li><span class="mark mark-green">&#10003;</span> Mobile-first responsive design</li>
+        <li><span class="mark mark-green">&#10003;</span> Google Maps, Instagram &amp; FAQ</li>
+        <li><span class="mark mark-green">&#10003;</span> Wolf's story, gallery &amp; Viktor Freso</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="summary-box">
+    <p>
+      This isn't a template. It's a website built specifically for Wolfies &mdash; your photos, your story, your brand. Every line of code was written by hand.
+    </p>
+  </div>
+
+  <div class="final-cta">
+    <p class="cta-line">Interested? Give me a call or text &mdash; happy to chat anytime.</p>
+    <p class="cta-contact">Zac &middot; 0401 102 066 &middot; zacmanzacmanoz@gmail.com</p>
+  </div>
+
+</div>
 
 </body>
 </html>
