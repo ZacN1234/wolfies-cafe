@@ -40,6 +40,11 @@
       justify-content: center;
     }
 
+    .page-2 {
+      justify-content: flex-start;
+      padding-top: 18mm;
+    }
+
     .page-1 {
       page-break-after: always;
     }
@@ -48,28 +53,27 @@
 
     .p2-headline {
       font-family: 'Playfair Display', serif;
-      font-size: 34px;
+      font-size: 32px;
       font-weight: 700;
       color: #1a1a1a;
-      margin: 10px 0 6px 0;
+      margin: 6px 0 4px 0;
     }
 
     .p2-subtitle {
-      font-size: 14px;
+      font-size: 13.5px;
       color: #6b6b6b;
-      margin-bottom: 30px;
+      margin-bottom: 22px;
     }
 
     .comparison {
-      display: flex;
-      gap: 32px;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
       width: 100%;
       margin: 0 auto;
     }
 
     .comparison-col {
-      flex: 1;
       text-align: left;
     }
 
@@ -110,16 +114,29 @@
     }
 
     .check-list li {
-      font-size: 12.5px;
-      line-height: 2;
+      font-size: 14px;
+      line-height: 1.6;
       color: #3d3d3d;
-      padding-left: 2px;
+      padding: 10px 0 10px 2px;
+      border-bottom: 1px solid #f0ebe0;
+    }
+
+    .check-list li:last-child {
+      border-bottom: none;
     }
 
     .check-list li .mark {
       font-weight: 700;
-      margin-right: 6px;
-      font-size: 13px;
+      margin-right: 8px;
+      font-size: 15px;
+    }
+
+    .check-list li .detail {
+      display: block;
+      font-size: 11.5px;
+      color: #7a7a7a;
+      margin-top: 3px;
+      padding-left: 23px;
     }
 
     .mark-red { color: #c0392b; }
@@ -129,9 +146,9 @@
       background: #f7f2e8;
       border: 1.5px solid #e8dcc8;
       border-radius: 10px;
-      padding: 20px 28px;
-      margin: 36px auto 0 auto;
-      max-width: 88%;
+      padding: 18px 28px;
+      margin: 24px auto 0 auto;
+      width: 100%;
       text-align: center;
     }
 
@@ -175,7 +192,7 @@
       width: 50px;
       height: 1.5px;
       background: linear-gradient(90deg, transparent, #c9b896, transparent);
-      margin: 16px auto;
+      margin: 10px auto;
     }
 
     .center {
@@ -186,57 +203,57 @@
 
     .p1-headline {
       font-family: 'Playfair Display', serif;
-      font-size: 40px;
+      font-size: 34px;
       font-weight: 700;
       color: #1a1a1a;
-      margin: 8px 0 16px 0;
+      margin: 4px 0 12px 0;
     }
 
     .p1-intro {
-      font-size: 14px;
-      line-height: 1.75;
+      font-size: 13.5px;
+      line-height: 1.7;
       color: #3d3d3d;
-      max-width: 440px;
-      margin: 0 auto 20px auto;
+      max-width: 430px;
+      margin: 0 auto 14px auto;
     }
 
     .p1-compliment {
       font-size: 13px;
-      line-height: 1.7;
+      line-height: 1.65;
       color: #4a4a4a;
       max-width: 430px;
-      margin: 0 auto 18px auto;
+      margin: 0 auto 14px auto;
     }
 
     .p1-bold {
-      font-size: 15.5px;
+      font-size: 15px;
       font-weight: 700;
       color: #1a1a1a;
-      margin: 0 0 10px 0;
+      margin: 0 0 8px 0;
     }
 
     .p1-explain {
       font-size: 13px;
-      line-height: 1.7;
+      line-height: 1.65;
       color: #4a4a4a;
       max-width: 430px;
-      margin: 0 auto 18px auto;
+      margin: 0 auto 14px auto;
     }
 
     .qr-block {
-      margin: 0 auto 16px auto;
+      margin: 0 auto 14px auto;
     }
 
     .qr-block img {
-      width: 110px;
-      height: 110px;
+      width: 100px;
+      height: 100px;
       border-radius: 8px;
     }
 
     .qr-block-label {
-      font-size: 10.5px;
-      font-weight: 600;
-      color: #8a7356;
+      font-size: 13px;
+      font-weight: 700;
+      color: #1a1a1a;
       margin-bottom: 6px;
       letter-spacing: 0.3px;
     }
@@ -253,11 +270,11 @@
 
     .pricing-box .price {
       font-family: 'Playfair Display', serif;
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 800;
       color: #1a1a1a;
       text-align: center;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .pricing-box ul {
@@ -283,26 +300,26 @@
     }
 
     .soft-close {
-      font-size: 12.5px;
+      font-size: 12px;
       color: #6b6b6b;
       font-style: italic;
       max-width: 400px;
-      margin: 0 auto 12px auto;
+      margin: 0 auto 10px auto;
       line-height: 1.6;
     }
 
     .sign-off {
       font-family: 'Playfair Display', serif;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       color: #1a1a1a;
-      margin: 0 0 6px 0;
+      margin: 0 0 5px 0;
     }
 
     .contact-details {
       font-size: 11px;
       color: #7a7a7a;
-      margin: 0 0 10px 0;
+      margin: 0 0 8px 0;
     }
 
     .contact-details a {
@@ -311,13 +328,13 @@
     }
 
     .zac-qr img {
-      width: 70px;
-      height: 70px;
-      border-radius: 6px;
+      width: 100px;
+      height: 100px;
+      border-radius: 8px;
     }
 
     .zac-qr-label {
-      font-size: 9.5px;
+      font-size: 9px;
       color: #9a8c74;
       margin-top: 3px;
       font-weight: 500;
@@ -346,12 +363,18 @@
         margin: 0;
       }
     }
+    .client-logo {
+      position: absolute; top: 18mm; right: 24mm; z-index: 2;
+      max-height: 50px; max-width: 120px; object-fit: contain;
+    }
   </style>
 </head>
 <body>
 
 <!-- ===================== PAGE 1 — THE PERSONAL NOTE ===================== -->
 <div class="page page-1 center">
+
+  <img src="images/logo.png" alt="Wolfies Cafe logo" class="client-logo">
 
   <span class="pill">A Note From a Local 15-Year-Old</span>
 
@@ -376,8 +399,10 @@
   </p>
 
   <div class="qr-block">
-    <p class="qr-block-label">Scan to see the new site:</p>
+    <p class="qr-block-label">&#9758; Your New Website</p>
     <img src="images/wolfies-qr.png" alt="QR code to the new Wolfies website">
+    <p style="font-size: 11px; color: #1a1a1a; font-weight: 600; margin-top: 5px;">Scan to see it live</p>
+    <p style="font-size: 9.5px; color: #9a8c74; margin-top: 2px;">wolfies-cafe.pages.dev</p>
   </div>
 
   <div class="pricing-box">
@@ -402,8 +427,9 @@
   </p>
 
   <div class="zac-qr">
+    <p class="qr-block-label">&#9758; My Website</p>
     <img src="images/zac-website-qr.png" alt="QR code to Zac's website">
-    <p class="zac-qr-label">My Website</p>
+    <p style="font-size: 9.5px; color: #9a8c74; margin-top: 4px;">zac-web-design.pages.dev</p>
   </div>
 
   <div class="footer-line">
@@ -427,12 +453,30 @@
       <span class="accent-label before">Before</span>
       <p class="col-title">Current Site</p>
       <ul class="check-list">
-        <li><span class="mark mark-red">&#10007;</span> Generic Shopify template</li>
-        <li><span class="mark mark-red">&#10007;</span> No SEO or Google visibility</li>
-        <li><span class="mark mark-red">&#10007;</span> Missing menu, hours &amp; location</li>
-        <li><span class="mark mark-red">&#10007;</span> Not mobile-optimised</li>
-        <li><span class="mark mark-red">&#10007;</span> No Google Maps or contact info</li>
-        <li><span class="mark mark-red">&#10007;</span> Doesn't tell Wolf's story</li>
+        <li><span class="mark mark-red">&#10007;</span> Generic Shopify template
+          <span class="detail">Looks like every other Shopify site &mdash; nothing unique to Wolfies</span>
+        </li>
+        <li><span class="mark mark-red">&#10007;</span> No SEO or Google visibility
+          <span class="detail">Missing title tags, meta descriptions, and structured data</span>
+        </li>
+        <li><span class="mark mark-red">&#10007;</span> Missing menu, hours &amp; location
+          <span class="detail">Customers can't find what you serve or when you're open</span>
+        </li>
+        <li><span class="mark mark-red">&#10007;</span> Not mobile-optimised
+          <span class="detail">Most customers search on their phone &mdash; the site doesn't work well on mobile</span>
+        </li>
+        <li><span class="mark mark-red">&#10007;</span> No Google Maps or contact info
+          <span class="detail">Tourists walking past can't find you on Maps</span>
+        </li>
+        <li><span class="mark mark-red">&#10007;</span> Doesn't tell Wolf's story
+          <span class="detail">The thing that makes Wolfies special isn't anywhere on the site</span>
+        </li>
+        <li><span class="mark mark-red">&#10007;</span> No customer reviews shown
+          <span class="detail">Great ratings on Google &mdash; but the website doesn't show them</span>
+        </li>
+        <li><span class="mark mark-red">&#10007;</span> Won't appear in AI search
+          <span class="detail">ChatGPT, Google AI &mdash; the site has no structured data for AI to read</span>
+        </li>
       </ul>
     </div>
 
@@ -441,12 +485,30 @@
       <span class="accent-label after">After</span>
       <p class="col-title">New Site</p>
       <ul class="check-list">
-        <li><span class="mark mark-green">&#10003;</span> Custom-designed, modern &amp; sleek</li>
-        <li><span class="mark mark-green">&#10003;</span> Built for Google search (SEO + AEO)</li>
-        <li><span class="mark mark-green">&#10003;</span> Full menu with sensory descriptions</li>
-        <li><span class="mark mark-green">&#10003;</span> Mobile-first responsive design</li>
-        <li><span class="mark mark-green">&#10003;</span> Google Maps, Instagram &amp; FAQ</li>
-        <li><span class="mark mark-green">&#10003;</span> Wolf's story, gallery &amp; Viktor Freso</li>
+        <li><span class="mark mark-green">&#10003;</span> Custom-designed for Wolfies
+          <span class="detail">Every colour, image, and word chosen specifically for your brand</span>
+        </li>
+        <li><span class="mark mark-green">&#10003;</span> Built for Google search (SEO + AEO)
+          <span class="detail">Structured data, meta tags, and content optimised to rank locally</span>
+        </li>
+        <li><span class="mark mark-green">&#10003;</span> Full menu with sensory descriptions
+          <span class="detail">Mouth-watering descriptions that make people want to visit</span>
+        </li>
+        <li><span class="mark mark-green">&#10003;</span> Mobile-first responsive design
+          <span class="detail">Looks perfect on every phone, tablet, and desktop</span>
+        </li>
+        <li><span class="mark mark-green">&#10003;</span> Google Maps, Instagram &amp; FAQ
+          <span class="detail">Everything a customer needs to find you, contact you, and visit</span>
+        </li>
+        <li><span class="mark mark-green">&#10003;</span> Wolf's story, gallery &amp; Viktor Freso
+          <span class="detail">The heart of Wolfies &mdash; front and centre where it belongs</span>
+        </li>
+        <li><span class="mark mark-green">&#10003;</span> Real customer reviews &amp; ratings
+          <span class="detail">Your best Google reviews showcased to build instant trust</span>
+        </li>
+        <li><span class="mark mark-green">&#10003;</span> AI-ready structured data
+          <span class="detail">When someone asks AI "best cafe in Manly" &mdash; you'll show up</span>
+        </li>
       </ul>
     </div>
 
